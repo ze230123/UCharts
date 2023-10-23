@@ -13,6 +13,9 @@
 		84EB49452AE11738006AC2AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EB49432AE11738006AC2AE /* Main.storyboard */; };
 		84EB49472AE1173A006AC2AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EB49462AE1173A006AC2AE /* Assets.xcassets */; };
 		84EB494A2AE1173A006AC2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EB49482AE1173A006AC2AE /* LaunchScreen.storyboard */; };
+		84EB49522AE1176C006AC2AE /* CollegeRankChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB49512AE1176C006AC2AE /* CollegeRankChart.swift */; };
+		84EB49552AE1243A006AC2AE /* UBase in Frameworks */ = {isa = PBXBuildFile; productRef = 84EB49542AE1243A006AC2AE /* UBase */; };
+		84EB49572AE2539D006AC2AE /* CollegeRankLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB49562AE2539D006AC2AE /* CollegeRankLineChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		84EB49462AE1173A006AC2AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84EB49492AE1173A006AC2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84EB494B2AE1173A006AC2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EB49512AE1176C006AC2AE /* CollegeRankChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeRankChart.swift; sourceTree = "<group>"; };
+		84EB49562AE2539D006AC2AE /* CollegeRankLineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeRankLineChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EB49552AE1243A006AC2AE /* UBase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 				84EB493D2AE11738006AC2AE /* AppDelegate.swift */,
 				84EB493F2AE11738006AC2AE /* SceneDelegate.swift */,
 				84EB49412AE11738006AC2AE /* ViewController.swift */,
+				84EB49512AE1176C006AC2AE /* CollegeRankChart.swift */,
+				84EB49562AE2539D006AC2AE /* CollegeRankLineChart.swift */,
 				84EB49432AE11738006AC2AE /* Main.storyboard */,
 				84EB49462AE1173A006AC2AE /* Assets.xcassets */,
 				84EB49482AE1173A006AC2AE /* LaunchScreen.storyboard */,
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = UCharts;
+			packageProductDependencies = (
+				84EB49542AE1243A006AC2AE /* UBase */,
+			);
 			productName = UCharts;
 			productReference = 84EB493A2AE11738006AC2AE /* UCharts.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 84EB49312AE11738006AC2AE;
+			packageReferences = (
+				84EB49532AE1243A006AC2AE /* XCRemoteSwiftPackageReference "UBase" */,
+			);
 			productRefGroup = 84EB493B2AE11738006AC2AE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +154,9 @@
 			files = (
 				84EB49422AE11738006AC2AE /* ViewController.swift in Sources */,
 				84EB493E2AE11738006AC2AE /* AppDelegate.swift in Sources */,
+				84EB49522AE1176C006AC2AE /* CollegeRankChart.swift in Sources */,
 				84EB49402AE11738006AC2AE /* SceneDelegate.swift in Sources */,
+				84EB49572AE2539D006AC2AE /* CollegeRankLineChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84EB49532AE1243A006AC2AE /* XCRemoteSwiftPackageReference "UBase" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://gitlab.youzy.cn/ios-framework/UBase.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84EB49542AE1243A006AC2AE /* UBase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84EB49532AE1243A006AC2AE /* XCRemoteSwiftPackageReference "UBase" */;
+			productName = UBase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84EB49322AE11738006AC2AE /* Project object */;
 }
